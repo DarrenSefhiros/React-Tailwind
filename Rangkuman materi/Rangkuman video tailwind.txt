@@ -1,0 +1,25 @@
+jadi video tersebut menjelaskan mengenai tailwind. yang dimana tailwind sendiri merupakan kerangka kerja css yang mempermudah kita dalam mengerjakan css tanpa perlu mengetik manual.Serta disana pun dijelaskan mengenai tutorial untuk menghubungkannya yaitu:
+1.instal node.js
+2.masuk ke file explorer dan ketik "cmd"
+3.kemudian ketik npm create vite@latest
+4.setelah itu pilih "create vite"
+5.namakan project nya
+6.untuk select a framework pilih "React"
+7.untuk varian pilih "JavaScript"
+8.kemudian tulis "cd (nama file)"
+9.lalu ketik code .
+10.setelah itu ketika sudah masuk ke visual studio code click terminal dan tulis "npm install tailwindcss @tailwindcss/vite"
+11.hapus file "app.css" dan folder "assets"
+12.lalu ke file "app.jsx" dan "app.css" kemudian hapus semua codingannya
+13.kemudian ke file vite.config.js dan ketik di bagian atas "import tailwindcss from '@tailwindcss/vite'" lalu juga di bagian plugin jangan lupa tambahkan tailwind
+14.kemudian ke file "index.css" lalu hapus semua codingannya dan ketik "@import "tailwindcss";"
+
+lalu disini kita bisa mengetik "rafce" di app.jsx untuk menampilkan strukturnya secara otomatis tanpa mengetik manual
+
+Setelah itu didalam video tersebut juga memperlihatkan kepada kita kalau bisa membuat kartu dengan cara:
+1.ke tailwind
+2.kemudian click card
+3.copy codingannya
+4.paste di website html to jsx
+5.copy code yg telah di jadikan ke jsx
+6.kemudian paste di app.jsx

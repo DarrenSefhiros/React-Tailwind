@@ -1,0 +1,44 @@
+materi react
+
+React
+PENGERTIAN:
+React adalah library javascript yang digunakan untuk membangun user interface (UI), terutama pada aplikasi web yang bersifat dinamis dan interaktif.
+Cara menginstal React:
+1.instal node.js (minimal versi 14 keatas)
+2.npm (sudah otomatis terinstal bersama node.js) atau bisa pakai yarn.
+setelah itu cek di terminal dengan command:
+1. node -v
+2. npm -v
+
+React Bootstrap
+PENGERTIAN:
+React Bootstrap adalah versi bootstrap (framework CSS populer) yang sudah dibuat ulang khusus untuk react.
+berikut ini adalah langkah langkah memasang react bootstrap:
+1.ke terminal
+2.ketik "install react-bootstrap bootstrap"
+3.lalu tunggu sampai selesai
+4.kemudian ke main.jsx.
+5.ke paling atas sendiri lalu tulis "import { BrowserRouter } from 'react-router-dom'"
+6.setelah itu di bawah nya ketik createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>
+  </StrictMode>,
+)
+agar dia bisa terhubung ke bootstrap
+
+Cara Membuat Page Di Jsx:
+cara bikin page jsx ada 2 cara yaitu:
+1.export default function (name file)
+2.import (name file) from "./pages/(name file)
+p
+
+Mapping data
+PENGERTIAN:
+mapping data adalah proses mengaitkan dan mencocokkan elemen data dari satu sumber ke sumber data target lainnya untuk memahami bagaimana data harus di transfer, di transformasi, dan dipahamii berbagai platform
+Penjesan Elemen:
+1.Import: import sendiri biasanya digunakan untuk menghubungkan file jsx dengan file yang lain. biasanya command nya itu ada di paling atas dan tulisannya itu 'import(file) from"../component/(file)'
+2.export: biasanya agar file itu bisa dihubungkan, export ini berada di paling bawah codingan. dan biasanya diketik "export default (nama file)"
+3.return: return merupakan elemen yang digunakan untuk membuka sebuah website dari codingan yang sedang kita coba liat.Biasanya kita harus memasukan url dari website tersebut agar kita bisa melihatnya
+4.const: Const adalah keyword di JavaScript untuk mendefinisikan variabel yang nilainya tidak bisa di reassign (tidak bisa diubah ke variabel lain). Dalam Mapping data saat kita punya array (misalnya daftar nama,produk,user) biasanya kita simpan di variable const karena data tersebut tidak akan di reassign ke variabel lain.Lalu kita pakai . map() untuk menampilkan datanya di ui react
