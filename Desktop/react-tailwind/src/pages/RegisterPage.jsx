@@ -23,7 +23,7 @@ function Registerpage() {
       <div className="bg-white p-8 rounded-lg shadow-md w-100 h-100 max-w-sn mt-30">
         <h1 className="text-2x1 font-bold text-center mb-6">Register</h1>
         <form onSubmit={handleSubmit}>
-          <div className="mb-4">
+          <div className="mb-4">                                                                                                                                                                        
             <label
               className="block text-gray-700 text-sm font-bold mb-2"
               htmlFor="Name"
