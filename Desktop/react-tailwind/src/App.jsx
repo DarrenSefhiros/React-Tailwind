@@ -4,13 +4,14 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import RegisterPage from './pages/RegisterPage'
 import { Routes, Route, Form } from "react-router-dom";
+import LandingPage from './pages/landingpage'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <Routes>
-      <Route path="/" element={<RegisterPage />} />
+      <Route path="/home" element={<LandingPage />} />
     </Routes>
   )
 }
