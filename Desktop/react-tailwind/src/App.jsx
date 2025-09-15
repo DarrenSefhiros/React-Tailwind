@@ -1,9 +1,7 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import RegisterPage from './pages/RegisterPage'
-import { Routes, Route, Form } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import LandingPage from './pages/landingpage'
 
 function App() {
@@ -11,7 +9,9 @@ function App() {
 
   return (
     <Routes>
+      <Route path="/" element={<LandingPage />} />
       <Route path="/home" element={<LandingPage />} />
+      <Route path="/register" element={<RegisterPage />} />
     </Routes>
   )
 }
