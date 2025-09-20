@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import './App.css'
-import RegisterPage from './pages/RegisterPage'
 import { Routes, Route } from "react-router-dom";
 import LandingPage from './pages/landingpage'
+import LoginPage from './pages/LOGIN.JSX';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,8 +10,8 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<LandingPage />} />
-      <Route path="/home" element={<LandingPage />} />
-      <Route path="/register" element={<RegisterPage />} />
+      <Route path="/registerpage" element={<LandingPage />} />
+      <Route path="/login" element={<LoginPage />} />
     </Routes>
   )
 }

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Registerpage() {
   const [formData, setFormData] = useState({
@@ -8,20 +8,36 @@ function Registerpage() {
     password: "",
   });
 
+  const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Register data", formData);
-    alert("Simulasi Pendaftaran Berhasl;");
+    setLoading(true);
+
+    try {
+      const response = await axios.post
+      ('http://localhost:5000/users', formData);
+      console.log('Register success:', response.data);
+
+      alert('Pendaftaran Berhasil!');
+      navigate('/login')
+    } catch (error) {
+        console.error('Error register:', error)
+        alert('Terjadi kesalahan saat mendaftar')
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
     <div className="flex item-center justify-center min-h-screen bg-gray-100">
       <div className="bg-white p-8 rounded-lg shadow-md w-100 h-100 max-w-sn mt-30">
-        <h1 className="text-2x1 font-bold text-center mb-6">Register</h1>
+        <h1 className="text-2x1 font-bold text-center mb-6">Login</h1>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">                                                                                                                                                                        
             <label

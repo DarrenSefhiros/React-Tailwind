@@ -1,44 +1,100 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import gambar from '../../public/ppdb.jpg';
+import React from "react";
+import { Link } from "react-router-dom";
+import gambar from "../../public/ppdb.jpg";
 
 function LandingPage() {
   return (
-<div className="flex flex-row min-h-screen bg-gray-300">
-  <div className="flex flex-col justify-center items-start w-1/2 px-16 mr-50">
-    <h1 className="text-4xl font-bold text-blue-700 mb-4">SMK BINA NUSANTARA SEMARANG</h1>
-    <p className="text-lg font-medium text-gray-800 bg-white p-4 rounded shadow">
-      Selamat datang di website SMK Bina Nusantara Semarang. Kami membuka penerimaan siswa baru tahun 2025/2026
-    </p>
-  </div>
-  <div className="bg-white p-10 shadow-lg w-[420px] flex flex-col items-center mr-20">
-    <img src={gambar} alt="PPDB" className="w-80 h-45" />
-    <h2 className="text-xl font-semibold text-gray-800 mb-4">PPDB SMK Bina Nusantara</h2>
-    <h1 className="text-2xl font-bold text-center mb-5">Register</h1>
-    <form className="w-full max-w-md">
-      <div className="mb-4">
-        <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">Nama</label>
-        <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700" id="name" type="text" placeholder="Masukan nama Anda" required />
+    <div className="min-h-screen bg-gray-200 flex items-center justify-center">
+      <div className="bg-white shadow-lg rounded-2xl overflow-hidden flex flex-col md:flex-row w-[900px]">
+        <div className="md:w-1/2 flex flex-col items-center justify-center bg-gray-50 p-6">
+          <img
+            src={gambar}
+            alt="PPDB"
+            className="w-full h-[280px] rounded-xl mb-4"
+          />
+          <h2 className="text-2xl font-bold text-gray-800 mb-2 text-center">
+            PPDB SMK Bina Nusantara
+          </h2>
+          <p className="text-gray-600 text-center px-4">
+            Selamat datang di website resmi SMK Bina Nusantara Semarang.
+            <br />
+            Kami membuka penerimaan siswa baru tahun ajaran{" "}
+            <span className="font-semibold">2025/2026</span>.
+          </p>
+        </div>
+        <div className="md:w-1/2 p-8 flex flex-col justify-center">
+          <h1 className="text-3xl font-bold text-gray-800 mb-6 text-center">
+            Register
+          </h1>
+          <form className="space-y-5">
+            <div>
+              <label
+                className="block text-gray-700 text-sm font-semibold mb-2"
+                htmlFor="name"
+              >
+                Nama Lengkap
+              </label>
+              <input
+                id="name"
+                type="text"
+                placeholder="Masukkan nama Anda"
+                required
+                className="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              />
+            </div>
+
+            <div>
+              <label
+                className="block text-gray-700 text-sm font-semibold mb-2"
+                htmlFor="email"
+              >
+                Email
+              </label>
+              <input
+                id="email"
+                type="email"
+                placeholder="Masukkan email Anda"
+                required
+                className="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              />
+            </div>
+
+            <div>
+              <label
+                className="block text-gray-700 text-sm font-semibold mb-2"
+                htmlFor="password"
+              >
+                Password
+              </label>
+              <input
+                id="password"
+                type="password"
+                placeholder="Buat password Anda"
+                required
+                className="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              />
+            </div>
+
+            <button
+              type="submit"
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300"
+            >
+              Daftar
+            </button>
+          </form>
+
+          <p className="text-sm text-center mt-4 text-gray-600">
+            Sudah punya akun?{" "}
+            <Link
+              to="/login"
+              className="text-blue-500 hover:text-blue-700 font-semibold"
+            >
+              Masuk di sini
+            </Link>
+          </p>
+        </div>
       </div>
-      <div className="mb-4">
-        <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">Email</label>
-        <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700" id="email" type="email" placeholder="Masukan email Anda" required />
-      </div>
-      <div className="mb-6">
-        <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="password">Password</label>
-        <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700" id="password" type="password" placeholder="Buat password Anda" required />
-      </div>
-      <div className="flex items-center justify-between">
-        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">
-          Masuk
-        </button>
-        <Link to="/landingpage" className="text-blue-500 hover:text-blue-800 text-sm font-bold">
-          Belum punya akun? Daftar
-        </Link>
-      </div>
-    </form>
-  </div>
-</div>
+    </div>
   );
 }
 
