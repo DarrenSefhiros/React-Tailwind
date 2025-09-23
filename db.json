@@ -1,5 +1,11 @@
 {
-    "users": [
-        
-    ] 
+  "menu": [
+    {
+      "id": "590c",
+      "Makanan": "aa",
+      "minuman": "",
+      "harga": "aa",
+      "Minuman": "aa"
+    }
+  ]
 }
