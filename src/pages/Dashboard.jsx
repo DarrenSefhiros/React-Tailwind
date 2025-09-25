@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
-function TabelData() {
+function Dashboard() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
@@ -23,23 +23,23 @@ function TabelData() {
     fetchData();
   }, []);
 
-  const handleDelete = async (id) => {
-    const konfirmasi = window.confirm("yakin ingin menghapus data ini?");
-    if (!konfirmasi) return;
-
-    try {
-      await axios.delete(`http://localhost:5000/menu/${id}`);
-      alert("Data berhasil dihapus");
-      setData(data.filter((item) => item.id !== id));
-    } catch (err) {
-      console.error("Gagal menghapus data:", err);
-      alert("Gagal menghapus data");
-    }
-  };
-
   return (
     <>
-      <table className="border-separate border border-gray-400 w-250 m-50 mx-75">
+<div className="box text-3xl text-blue-600 ml-170 grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 pt-5 gap-5">
+    <h1 className="font-bold text-center">Dashboard</h1>
+    <div className="flex flex-nowrap gap-50">
+      <div className="box box bg-blue-600 rounded h-30 flex items-center justify-center my-20 mr-130 -mx-145 px-15 shadow-xl">
+        <h1 className="text-white text-center font-bold text-xl">Pesanan</h1>
+      </div>
+      <div className="box box bg-blue-600 rounded h-30 flex items-center justify-center my-20 mr-130 -mx-145 px-15 shadow-xl">
+        <h1 className="text-white text-center font-bold text-xl">Penerima</h1>
+      </div>
+      <div className="box box bg-blue-600 rounded h-30 flex items-center justify-center my-20 mr-130 -mx-145 px-15 shadow-xl">
+        <h1 className="text-white text-center font-bold text-xl">Ulasan</h1>
+      </div>
+    </div>
+    </div>
+      <table className="border-separate border border-gray-400 w-250 mx-75">
         <thead className="bg-gray-400">
           <tr>
             <th className="border border-gray-300">nomer</th>
@@ -56,24 +56,6 @@ function TabelData() {
                 <td className="border border-gray-300">{item.Makanan}</td>
                 <td className="border border-gray-300">{item.Minuman}</td>
                 <td className="border border-gray-300">{item.harga}</td>
-                <td className="border border-gray-300">
-                  <div className="">
-                    <div>          
-                  <Link to={`/edit/${item.id}`}>
-                    <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded focus:outline-none focus:shadow-outline my-2">
-                  Edit
-                 </button>
-                      </Link>
-                    </div>
-
-                  <button
-                    className="bg-red-500 text-white px-2 py-1 rounded"
-                    onClick={() => handleDelete(item.id)}
-                  >
-                    Hapus
-                  </button>
-                  </div>
-                </td>
               </tr>
             ))
           ) : (
@@ -88,4 +70,4 @@ function TabelData() {
     </>
   );
 }
-export default TabelData;
+export default Dashboard;

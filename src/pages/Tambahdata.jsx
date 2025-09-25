@@ -33,7 +33,7 @@ function Tambahdata() {
           })
 
 
-          navigate("/TabelData");
+          navigate("/Dashboard");
         } catch (error) {
           console.error("Error saat menambahkan data:", error);
           alert("Gagal menambahkan data!");
@@ -94,7 +94,7 @@ function Tambahdata() {
                     </div>
                     <div className="flex items-center justify-between">
                         <button
-                            className="bg-sky-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                            className="bg-sky-500 hover:bg-blue-700 text-white font-bold py-2 px-4 justify-between rounded focus:outline-none focus:shadow-outline"
                             type="submit"
                         >
                             Simpan

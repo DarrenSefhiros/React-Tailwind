@@ -1,11 +1,32 @@
 {
   "menu": [
     {
-      "id": "590c",
-      "Makanan": "aa",
+      "id": "504e",
+      "Makanan": "sapi",
       "minuman": "",
-      "harga": "aa",
-      "Minuman": "aa"
+      "harga": 10,
+      "Minuman": "coca cola"
+    },
+    {
+      "id": "e2b8",
+      "Makanan": "sapi",
+      "minuman": "",
+      "harga": "10",
+      "Minuman": "coca cola"
+    },
+    {
+      "id": "c0ab",
+      "Makanan": "sapi",
+      "minuman": "",
+      "harga": "10",
+      "Minuman": "coca cola"
+    },
+    {
+      "id": "02b0",
+      "Makanan": "sapi",
+      "minuman": "",
+      "harga": "10",
+      "Minuman": "coca cola"
     }
   ]
 }
