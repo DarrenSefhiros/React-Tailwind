@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import axios from "axios";
+import Swal from "sweetalert2";
 
 function EditData() {
   const { id } = useParams();
@@ -23,7 +24,12 @@ useEffect(() => {
       // alert("Berhasil mengambil data!"); 
     } catch (err) {
       console.error("Gagal mengambil data:", err);
-      alert("Gagal mengambil data!");
+      Swal.fire({
+  icon: "error",
+  title: "Oops...",
+  text: "Gagal mengambil data",
+  footer: '<a href="#">Why do I have this issue?</a>'
+});
     } finally {
       setLoading(false);
     }
@@ -50,11 +56,20 @@ useEffect(() => {
 
   try {
     await axios.put(`http://localhost:5000/menu/${id}`, dataToSend);
-    alert("Data berhasil diubah!");
+    Swal.fire({
+  title: "Data berhasil diubah",
+  icon: "success",
+  draggable: true
+});
     navigate("/Tabeldata");
   } catch (err) {
     console.error("Gagal mengupdate data:", err.response?.data || err.message);
-    alert("Gagal mengupdate data!");
+      Swal.fire({
+  icon: "error",
+  title: "Oops...",
+  text: "Gagal mengambil data",
+  footer: '<a href="#">Why do I have this issue?</a>'
+});
   }
 };
 

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import Swal from "sweetalert2";
 
 function TabelData() {
   const [data, setData] = useState([]);
@@ -29,11 +30,20 @@ function TabelData() {
 
     try {
       await axios.delete(`http://localhost:5000/menu/${id}`);
-      alert("Data berhasil dihapus");
+      Swal.fire({
+  title: "Berhasil",
+  icon: "success",
+  draggable: true
+});
       setData(data.filter((item) => item.id !== id));
     } catch (err) {
       console.error("Gagal menghapus data:", err);
-      alert("Gagal menghapus data");
+      Swal.fire({
+  icon: "error",
+  title: "Oops...",
+  text: "Something went wrong!",
+  footer: '<a href="#">Why do I have this issue?</a>'
+});
     }
   };
 

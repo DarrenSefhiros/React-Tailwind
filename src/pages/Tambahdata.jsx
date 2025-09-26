@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, Navigate, useNavigate } from 'react-router-dom';
 import axios from "axios";
+import Swal from 'sweetalert2';
 
 
 function Tambahdata() {
@@ -24,7 +25,13 @@ function Tambahdata() {
           const response = await axios.post("http://localhost:5000/menu", formData);
 
           console.log("Respon server:", response.data);
-          alert("Data berhasil ditambahkan!");
+          Swal.fire({
+  position: "center",
+  icon: "success",
+  title: "data anda telah di simpan",
+  showConfirmButton: false,
+  timer: 1500
+           });
 
           setFormData({
             Makanan: "",
@@ -35,8 +42,13 @@ function Tambahdata() {
 
           navigate("/Dashboard");
         } catch (error) {
-          console.error("Error saat menambahkan data:", error);
-          alert("Gagal menambahkan data!");
+          console.error(err);
+          Swal.fire({
+  icon: "error",
+  title: "Oops...",
+  text: "Something went wrong!",
+  footer: '<a href="#">Why do I have this issue?</a>'
+});
         } finally {
           setLoading(false);
         }
