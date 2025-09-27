@@ -25,26 +25,38 @@ function TabelData() {
   }, []);
 
   const handleDelete = async (id) => {
-    const konfirmasi = window.confirm("yakin ingin menghapus data ini?");
-    if (!konfirmasi) return;
+      Swal.fire({
+    title: "Are you sure?",
+    text: "Data tidak akan bisa dikembalikan jika telah dihapus",
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonColor: "#3085d6",
+    cancelButtonColor: "#d33",
+    confirmButtonText: "Hapus data"
+  }).then(async (result) => {
+    if (result.isConfirmed) {
+
 
     try {
       await axios.delete(`http://localhost:5000/menu/${id}`);
-      Swal.fire({
-  title: "Berhasil",
-  icon: "success",
-  draggable: true
-});
-      setData(data.filter((item) => item.id !== id));
+      setData((prev) => prev.filter ((item) => item.id !== id))
+
+              Swal.fire({
+          title: "Deleted!",
+          text: "Data anda telah dihapus",
+          icon: "success"
+        });
     } catch (err) {
       console.error("Gagal menghapus data:", err);
-      Swal.fire({
-  icon: "error",
-  title: "Oops...",
-  text: "Something went wrong!",
-  footer: '<a href="#">Why do I have this issue?</a>'
-});
+        Swal.fire({
+          title: "Error!",
+          text: "Terjadi kesalahan saat menghapus data.",
+          icon: "error",
+          confirmButtonText: "OK"
+        });
     }
+  };
+});
   };
 
   return (

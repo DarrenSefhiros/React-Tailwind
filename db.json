@@ -1,284 +1,32 @@
 {
   "menu": [
     {
-      "id": "2a7c",
-      "Makanan": "sapi",
+      "id": "0d55",
+      "Makanan": "sapi perah",
       "minuman": "",
-      "harga": "10",
-      "Minuman": "coca cola"
+      "harga": "7000",
+      "Minuman": "susu murni nasional"
     },
     {
-      "id": "c66e",
-      "Makanan": "sapi",
+      "id": "8bcf",
+      "Makanan": "Ronald tepung tapioka",
       "minuman": "",
-      "harga": "10",
-      "Minuman": "coca cola"
+      "harga": "2000",
+      "Minuman": "dih tea"
     },
     {
-      "id": "7585",
-      "Makanan": "sapi",
+      "id": "32a4",
+      "Makanan": "ni",
       "minuman": "",
-      "harga": "10",
-      "Minuman": "coca cola"
+      "harga": "a",
+      "Minuman": "gg"
     },
     {
-      "id": "3fe5",
-      "Makanan": "sapi",
+      "id": "231c",
+      "Makanan": "Fadhil cupang",
       "minuman": "",
-      "harga": "10",
-      "Minuman": "coca cola"
-    },
-    {
-      "id": "af14",
-      "Makanan": "sapi",
-      "minuman": "",
-      "harga": "10",
-      "Minuman": "coca cola"
-    },
-    {
-      "id": "9b0d",
-      "Makanan": "sapi",
-      "minuman": "",
-      "harga": "10",
-      "Minuman": "coca cola"
-    },
-    {
-      "id": "d396",
-      "Makanan": "sapi",
-      "minuman": "",
-      "harga": "10",
-      "Minuman": "coca cola"
-    },
-    {
-      "id": "5e5f",
-      "Makanan": "sapi",
-      "minuman": "",
-      "harga": "10",
-      "Minuman": "coca cola"
-    },
-    {
-      "id": "e570",
-      "Makanan": "sapi",
-      "minuman": "",
-      "harga": "10",
-      "Minuman": "coca cola"
-    },
-    {
-      "id": "d495",
-      "Makanan": "sapi",
-      "minuman": "",
-      "harga": "10",
-      "Minuman": "coca cola"
-    },
-    {
-      "id": "726c",
-      "Makanan": "sapi",
-      "minuman": "",
-      "harga": "10",
-      "Minuman": "coca cola"
-    },
-    {
-      "id": "1d52",
-      "Makanan": "sapi",
-      "minuman": "",
-      "harga": "10",
-      "Minuman": "coca cola"
-    },
-    {
-      "id": "77b5",
-      "Makanan": "sapi",
-      "minuman": "",
-      "harga": "10",
-      "Minuman": "coca cola"
-    },
-    {
-      "id": "7348",
-      "Makanan": "sapi",
-      "minuman": "",
-      "harga": "10",
-      "Minuman": "coca cola"
-    },
-    {
-      "id": "5238",
-      "Makanan": "sapi",
-      "minuman": "",
-      "harga": "10",
-      "Minuman": "coca cola"
-    },
-    {
-      "id": "1bf2",
-      "Makanan": "sapi",
-      "minuman": "",
-      "harga": "10",
-      "Minuman": "coca cola"
-    },
-    {
-      "id": "b804",
-      "Makanan": "sapi",
-      "minuman": "",
-      "harga": "10",
-      "Minuman": "coca cola"
-    },
-    {
-      "id": "d196",
-      "Makanan": "sapi",
-      "minuman": "",
-      "harga": "10",
-      "Minuman": "coca cola"
-    },
-    {
-      "id": "a07c",
-      "Makanan": "sapi",
-      "minuman": "",
-      "harga": "10",
-      "Minuman": "coca cola"
-    },
-    {
-      "id": "b373",
-      "Makanan": "sapi",
-      "minuman": "",
-      "harga": "10",
-      "Minuman": "coca cola"
-    },
-    {
-      "id": "9935",
-      "Makanan": "sapi",
-      "minuman": "",
-      "harga": "10",
-      "Minuman": "coca cola"
-    },
-    {
-      "id": "cf38",
-      "Makanan": "sapi",
-      "minuman": "",
-      "harga": "10",
-      "Minuman": "coca cola"
-    },
-    {
-      "id": "56ea",
-      "Makanan": "sapi",
-      "minuman": "",
-      "harga": "10",
-      "Minuman": "coca cola"
-    },
-    {
-      "id": "db99",
-      "Makanan": "sapi",
-      "minuman": "",
-      "harga": "10",
-      "Minuman": "coca cola"
-    },
-    {
-      "id": "45c8",
-      "Makanan": "sapi",
-      "minuman": "",
-      "harga": "10",
-      "Minuman": "coca cola"
-    },
-    {
-      "id": "2100",
-      "Makanan": "sapi",
-      "minuman": "",
-      "harga": "10",
-      "Minuman": "coca cola"
-    },
-    {
-      "id": "1863",
-      "Makanan": "sapi",
-      "minuman": "",
-      "harga": "10",
-      "Minuman": "coca cola"
-    },
-    {
-      "id": "8844",
-      "Makanan": "sapi",
-      "minuman": "",
-      "harga": "10",
-      "Minuman": "coca cola"
-    },
-    {
-      "id": "1fb8",
-      "Makanan": "sapi",
-      "minuman": "",
-      "harga": "10",
-      "Minuman": "coca cola"
-    },
-    {
-      "id": "d184",
-      "Makanan": "sapi",
-      "minuman": "",
-      "harga": "10",
-      "Minuman": "coca cola"
-    },
-    {
-      "id": "5439",
-      "Makanan": "sapi",
-      "minuman": "",
-      "harga": "10",
-      "Minuman": "coca cola"
-    },
-    {
-      "id": "e0a8",
-      "Makanan": "sapi",
-      "minuman": "",
-      "harga": "10",
-      "Minuman": "coca cola"
-    },
-    {
-      "id": "be00",
-      "Makanan": "sapi",
-      "minuman": "",
-      "harga": "10",
-      "Minuman": "coca cola"
-    },
-    {
-      "id": "be87",
-      "Makanan": "sapi",
-      "minuman": "",
-      "harga": "10",
-      "Minuman": "coca cola"
-    },
-    {
-      "id": "a82d",
-      "Makanan": "sapi",
-      "minuman": "",
-      "harga": "10",
-      "Minuman": "coca cola"
-    },
-    {
-      "id": "99f9",
-      "Makanan": "sapi",
-      "minuman": "",
-      "harga": "10",
-      "Minuman": "coca cola"
-    },
-    {
-      "id": "dc40",
-      "Makanan": "sapi",
-      "minuman": "",
-      "harga": "10",
-      "Minuman": "coca cola"
-    },
-    {
-      "id": "2c1b",
-      "Makanan": "aa",
-      "minuman": "",
-      "harga": "1111",
-      "Minuman": "aa"
-    },
-    {
-      "id": "90af",
-      "Makanan": "aa",
-      "minuman": "",
-      "harga": 1111,
-      "Minuman": "aa"
-    },
-    {
-      "id": "3fb7",
-      "Makanan": "sapi",
-      "minuman": "",
-      "harga": "10",
-      "Minuman": "coca cola"
+      "harga": "6000",
+      "Minuman": "es teh anget"
     }
   ]
 }

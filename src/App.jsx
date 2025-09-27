@@ -7,6 +7,7 @@ import EditData from "./pages/Editdata";
 import TabelData from "./pages/Tabeldata";
 import Sidnav from "./Component/sidnav";
 import Dashboard from "./pages/Dashboard";
+import profile from "./Component/profile";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       <Route path="/home" element={<Tambahdata />} />
       <Route path="/Tabeldata" element={<TabelData />} />
       <Route path="/Dashboard" element={<Dashboard />} />
+      <Route path="/profile" element={<profile />} />
       <Route path="/edit/:id" element={<EditData />} />
     </Routes>
       </div>
