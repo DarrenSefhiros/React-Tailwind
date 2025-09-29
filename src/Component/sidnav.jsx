@@ -12,14 +12,23 @@ function Sidnav() {
                 Binus
                 </div>
                 <nav className="space-y-3">
-                    <button className="hover:bg-gray-700 text-white font-bold py-1 rounded focus:shadow-outline my-2">
+                    <button className="hover:bg-gray-700 underline text-white font-semibold py-1 rounded focus:shadow-outline my-2">
                     <a href="/" className="block mx-20 rounded">Tambah Data</a>
                     </button>
-                    <button className="hover:bg-gray-700 text-white font-bold py-1 rounded focus:outline-none focus:shadow-outline my-2">
+                    <button className="hover:bg-gray-700 underline text-white font-semibold py-1 rounded focus:outline-none focus:shadow-outline my-2">
                     <a href="/Dashboard" className="block mx-20 rounded focus:outline-none">Dashboard</a>
                     </button>
-                    <button className="hover:bg-gray-700 text-white font-bold py-1 px-5 rounded focus:outline-none focus:shadow-outline my-2">
+                    <button className="hover:bg-gray-700 underline text-white font-semibold py-1 px-5 rounded focus:outline-none focus:shadow-outline my-2">
                     <a href="/Tabeldata" className="block mx-20 rounded focus:outline-none">Tabel</a>
+                    </button>
+                    <button className="hover:bg-gray-700 underline text-white font-semibold py-1 px-3.5 rounded focus:outline-none focus:shadow-outline my-2">
+                    <a href="/profile" className="block mx-20 rounded focus:outline-none">Profile</a>
+                    </button>
+                    <button className="hover:bg-gray-700 underline text-white font-semibold py-1 px-3.5 rounded focus:outline-none focus:shadow-outline my-2">
+                    <a href="/menu" className="block mx-20 rounded focus:outline-none">Tabel User</a>
+                    </button>
+                    <button className="hover:bg-gray-700 underline text-white font-semibold py-1 px-4.5 rounded focus:outline-none focus:shadow-outline my-2">
+                    <a href="/Login" className="block mx-20 rounded focus:outline-none">Login</a>
                     </button>
                 </nav>
                 

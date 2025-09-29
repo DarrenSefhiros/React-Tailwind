@@ -1,32 +1,25 @@
 {
   "menu": [
     {
-      "id": "0d55",
-      "Makanan": "sapi perah",
+      "id": "4f38",
+      "Makanan": "awda",
       "minuman": "",
-      "harga": "7000",
-      "Minuman": "susu murni nasional"
+      "harga": "wadad",
+      "Minuman": "awda"
     },
     {
-      "id": "8bcf",
-      "Makanan": "Ronald tepung tapioka",
-      "minuman": "",
-      "harga": "2000",
-      "Minuman": "dih tea"
+      "id": "00da",
+      "nama": "awda",
+      "umur": "aa",
+      "email": "aw",
+      "password": "a"
     },
     {
-      "id": "32a4",
-      "Makanan": "ni",
-      "minuman": "",
-      "harga": "a",
-      "Minuman": "gg"
-    },
-    {
-      "id": "231c",
-      "Makanan": "Fadhil cupang",
-      "minuman": "",
-      "harga": "6000",
-      "Minuman": "es teh anget"
+      "id": "ea29",
+      "nama": "awda",
+      "umur": "w",
+      "email": "awda",
+      "password": "aw"
     }
   ]
 }

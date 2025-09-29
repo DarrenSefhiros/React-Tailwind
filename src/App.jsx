@@ -7,7 +7,10 @@ import EditData from "./pages/Editdata";
 import TabelData from "./pages/Tabeldata";
 import Sidnav from "./Component/sidnav";
 import Dashboard from "./pages/Dashboard";
-import profile from "./Component/profile";
+import Profile from "./Component/profile";
+import TabelMenu from "./pages/TabelMenu";
+import LoginPage from "./pages/LoginPage";
+import EditMenu from "./pages/Editmenu";
 
 const App = () => {
   return (
@@ -21,8 +24,11 @@ const App = () => {
       <Route path="/home" element={<Tambahdata />} />
       <Route path="/Tabeldata" element={<TabelData />} />
       <Route path="/Dashboard" element={<Dashboard />} />
-      <Route path="/profile" element={<profile />} />
+      <Route path="/profile" element={<Profile />} />
       <Route path="/edit/:id" element={<EditData />} />
+      <Route path="/Login" element={<LoginPage />} />
+      <Route path="/Menu" element={<TabelMenu />} />
+      <Route path="/EditMenu/:id" element={<EditMenu />} />
     </Routes>
       </div>
     </div>

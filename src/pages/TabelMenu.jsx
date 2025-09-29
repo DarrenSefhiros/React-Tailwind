@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import Swal from "sweetalert2";
 
-function TabelData() {
+function TabelMenu() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
@@ -65,9 +65,9 @@ function TabelData() {
     <thead className="bg-gray-400">
       <tr>
         <th className="border border-gray-300">nomer</th>
-        <th className="border border-gray-300">Makanan</th>
-        <th className="border border-gray-300">minuman</th>
-        <th className="border border-gray-300">harga</th>
+        <th className="border border-gray-300">nama</th>
+        <th className="border border-gray-300">email</th>
+        <th className="border border-gray-300">password</th>
       </tr>
     </thead>
     <tbody>
@@ -75,13 +75,13 @@ function TabelData() {
         data.map((item, index) => (
           <tr key={item.id}>
             <td className="border border-gray-300">{index + 1}</td>
-            <td className="border border-gray-300">{item.Makanan}</td>
-            <td className="border border-gray-300">{item.Minuman}</td>
-            <td className="border border-gray-300">{item.harga}</td>
+            <td className="border border-gray-300">{item.nama}</td>
+            <td className="border border-gray-300">{item.email}</td>
+            <td className="border border-gray-300">{item.password}</td>
             <td className="border border-gray-300">
               <div>
                 <div>          
-                  <Link to={`/edit/${item.id}`}>
+                  <Link to={`/EditMenu/${item.id}`}>
                     <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded focus:outline-none focus:shadow-outline my-2">
                       Edit
                     </button>
@@ -111,4 +111,4 @@ function TabelData() {
 
   );
 }
-export default TabelData;
+export default TabelMenu;
